@@ -14,7 +14,10 @@ body {
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    transform: scale(1.2);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -69,6 +72,50 @@ body {
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 
 
+/*---Header---*/
+
+header{
+  border: 1px solid gold;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.entreprise{
+  border: 1px solid magenta;
+  width: 50%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.nav{
+  border: 1px solid magenta;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav nav{
+  border: 1px solid gold;
+  width: 80%;
+}
+
+.nav ul{
+  border: 1px solid salmon;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.nav li{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
 
 
 
@@ -81,4 +128,13 @@ body {
   /*--téléphone--*/
   @media only screen and (max-width: 767px) {
     /* styles pour les téléphones vont ici */
+
+    .entreprise{
+      width: 100%;
+      font-size: 1.2em;
+    }
+
+    .nav{
+      display: none;
+    }
   }
