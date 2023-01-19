@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sofia+Sans:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -25,13 +26,14 @@ body {
     font-weight: normal;
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
   }
   
   p {
     color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
   }
   
   img {
@@ -89,6 +91,7 @@ header{
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .nav{
@@ -114,7 +117,7 @@ header{
 .nav li{
   display: flex;
   justify-content: space-around;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 
@@ -123,6 +126,10 @@ header{
   /*--Tablette--*/
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* styles pour les tablettes vont ici */
+
+    .nav li{
+      font-size: 1.1em;
+    }
   }
 
   /*--téléphone--*/
