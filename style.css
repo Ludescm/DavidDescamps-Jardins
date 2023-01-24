@@ -70,7 +70,14 @@ body {
     bottom:20px;
     right:20px;
     z-index: 99;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
 }
+
+  #topBtn:hover{
+    transform: scale(1.15);
+  }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -135,6 +142,127 @@ header{
   box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
 }
 
+/*---Presentation---*/
+
+#presentation{
+  border: 1px solid magenta;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+#presentation h3{
+  font-family: 'Sofia Sans', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 50px;
+  margin-left: 5%;
+}
+
+.encadrement{
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 1px 1px 5px 0px rgba(255,255,255,0.75);
+}
+
+.encadrement p{
+  font-size: large;
+  line-height: 30px;
+}
+
+.encadrement b{
+  font-size: 1.1em;
+}
+
+
+/*---Services---*/
+
+#services{
+  border: 2px solid gold;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 500px;
+  text-align: center;
+}
+
+#services img{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
+  object-fit: cover;
+}
+
+#services img:hover{
+  transform: scale(1.02);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+#services h3{
+  font-weight: bold;
+  font-size: 2.5em;
+  background-color: #ffffff25;
+  padding: 20px 0px;
+}
+
+#services p{
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+.ParcsJardins{
+  margin-bottom: 100px;
+}
+
+.ParcsJardins ul{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.ParcsJardins li{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+}
+
+
+
+.travauxBois{
+  border: 2px solid magenta;
+  margin-bottom: 100px;
+}
+
+.travauxBois ul{
+  border: 1px solid salmon;
+  margin-left: 1%;
+  width: 98%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.travauxBois li{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+}
+
+
 
 
 
@@ -149,7 +277,16 @@ header{
     #banniere{
       font-size: 1.5em;
     }
-  
+
+    #services h3{
+      font-size: 2em;
+      padding: 15px 0px;
+      margin-bottom: 20px;
+    }
+    
+    #services p{
+      font-size: 1.2em;
+    }
 
   }
 
@@ -169,5 +306,10 @@ header{
     #banniere{
       height: 100px;
       font-size: 0.8em;
+    }
+
+    #presentation h3{
+      margin-top: -50px;
+      font-size: 1.8em;
     }
   }
