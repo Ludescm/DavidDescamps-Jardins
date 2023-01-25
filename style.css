@@ -170,6 +170,7 @@ header{
 
 .encadrement p{
   width: 70%;
+  padding: 20px;
   font-size: large;
   line-height: 30px;
   box-shadow: 1px 1px 5px 0px rgba(255,255,255,0.75);
@@ -305,5 +306,10 @@ header{
     #presentation h3{
       margin-top: -50px;
       font-size: 1.8em;
+    }
+    
+    .encadrement p{
+      width: 80%;
+      font-size: medium;
     }
   }
