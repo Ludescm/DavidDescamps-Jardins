@@ -145,7 +145,6 @@ header{
 /*---Presentation---*/
 
 #presentation{
-  border: 1px solid magenta;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -170,10 +169,9 @@ header{
 }
 
 .encadrement p{
+  width: 70%;
   font-size: large;
   line-height: 30px;
-  width: 70%;
-  padding: 25px;
   box-shadow: 1px 1px 5px 0px rgba(255,255,255,0.75);
 }
 
