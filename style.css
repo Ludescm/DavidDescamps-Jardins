@@ -163,17 +163,18 @@ header{
 }
 
 .encadrement{
-  width: 80%;
   display: flex;
+  justify-content: center;
   padding: 20px;
-  border: 5px solid khaki;
   text-align: center;
-  box-shadow: 1px 1px 5px 0px rgba(255,255,255,0.75);
 }
 
 .encadrement p{
   font-size: large;
   line-height: 30px;
+  width: 70%;
+  padding: 25px;
+  box-shadow: 1px 1px 5px 0px rgba(255,255,255,0.75);
 }
 
 .encadrement b{
@@ -238,8 +239,6 @@ header{
   margin-top: 2.5%;
 }
 
-
-
 .travauxBois{
   border: 2px solid magenta;
   margin-bottom: 100px;
@@ -262,10 +261,6 @@ header{
   margin-bottom: 2.5%;
   margin-top: 2.5%;
 }
-
-
-
-
 
   /*--Tablette--*/
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
