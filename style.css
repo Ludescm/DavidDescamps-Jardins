@@ -148,17 +148,9 @@ header{
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  justify-content: center;
-}
-
-#presentation h3{
-  font-family: 'Sofia Sans', sans-serif;
-  font-weight: bold;
-  font-size: 3em;
+  margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 5%;
+  justify-content: center;
 }
 
 .encadrement{
@@ -169,7 +161,7 @@ header{
 }
 
 .encadrement p{
-  width: 70%;
+  width: 80%;
   padding: 20px;
   font-size: large;
   line-height: 30px;
@@ -311,5 +303,41 @@ header{
     .encadrement p{
       width: 80%;
       font-size: medium;
+    }
+
+    #services h3{
+      font-weight: bold;
+      font-size: 1.7em;
+      background-color: #ffffff25;
+      padding: 20px 0px;
+      margin-bottom: 25px;
+    }
+
+    #services p{
+      font-size: 1em;
+    }
+
+    .ParcsJardins ul{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around;
+    }
+
+    .ParcsJardins li{
+      width: 90%;
+      margin-left: 5%;
+    }
+
+    #services img{
+      height: 200px;
+    }
+
+    .travauxBois ul{
+      flex-flow: column wrap;
+    }
+
+    .travauxBois li{
+      width: 90%;
+      margin-left: 5%;
     }
   }
