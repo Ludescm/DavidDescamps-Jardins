@@ -4,7 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: white;
-    background-color: #39493D;
+    background: linear-gradient(to top, #5a3f37, #2c7744);
     margin: 0;
     padding: 0;
   }
@@ -12,14 +12,6 @@ body {
   a {
     color: white;
     text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -84,44 +76,6 @@ body {
 
 /*---Header---*/
 
-header{
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.entreprise{
-  width: 50%;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.nav{
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav nav{
-  width: 80%;
-}
-
-.nav ul{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-
-.nav li{
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.5em;
-}
 
 /*---Banniere---*/
 
@@ -144,122 +98,27 @@ header{
 
 /*---Presentation---*/
 
-#presentation{
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-
-.encadrement{
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  text-align: center;
-}
-
-.encadrement p{
-  width: 80%;
-  padding: 20px;
-  font-size: large;
-  line-height: 30px;
-  box-shadow: 1px 1px 5px 0px rgba(255,255,255,0.75);
-}
-
-.encadrement b{
-  font-size: 1.1em;
-}
 
 
 /*---Services---*/
-
-#services{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: -50px;
-  text-align: center;
-}
-
-#services img{
-  width: 100%;
-  height: 400px;
-  margin-bottom: 25px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
-  object-fit: cover;
-}
-
-#services img:hover{
-  transform: scale(1.02);
-  transition: 500ms;
-  cursor: pointer;
-}
 
 #services h3{
   font-weight: bold;
   font-size: 2.5em;
   background-color: #ffffff25;
   padding: 20px 0px;
+  text-align: center;
 }
 
-#services p{
-  font-family: 'Sofia Sans', sans-serif;
-  font-size: 1.5em;
-}
-
-.ParcsJardins{
-  margin-bottom: 100px;
-}
-
-.ParcsJardins ul{
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.ParcsJardins li{
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2.5%;
-  margin-top: 2.5%;
-}
-
-.travauxBois{
-  margin-bottom: 100px;
-}
-
-.travauxBois ul{
-  margin-left: 1%;
-  width: 98%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.travauxBois li{
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2.5%;
-  margin-top: 2.5%;
+#services img{
+  width: 20%;
+  height: 400px;
+  object-fit: cover;
 }
 
 /*---Bois de Chauffage---*/
 
-#bois_Chauffage{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 75px;
-  text-align: center;
-}
-
-#bois_Chauffage h3{
+#boisChauffage h3{
   font-weight: bold;
   font-size: 2.5em;
   background-color: #ffffff25;
@@ -267,45 +126,12 @@ header{
   text-align: center;
 }
 
-.bois_div{
-  display: flex;
-  flex-direction: row;
-}
-
-.bois_div ul{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.bois_div li{
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2.5%;
-}
-
-.bois_div p{
-  font-family: 'Sofia Sans', sans-serif;
-  font-size: 1.5em;
-}
-
 .bois_div img{
-  width: 100%;
+  width: 20%;
   height: 400px;
-  margin-bottom: 25px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.8);
   object-fit: cover;
 }
 
-.bois_div img:hover{
-  transform: scale(1.02);
-  transition: 500ms;
-  cursor: pointer;
-}
 
 /*---Contact---*/
 
@@ -328,27 +154,6 @@ header{
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* styles pour les tablettes vont ici */
 
-    .nav li{
-      font-size: 1.1em;
-    }
-
-    #banniere{
-      font-size: 1.5em;
-    }
-
-    #services h3{
-      font-size: 2em;
-      padding: 15px 0px;
-      margin-bottom: 20px;
-    }
-    
-    #services p{
-      font-size: 1.2em;
-    }
-
-    .bois_div p{
-      font-size: 1.2em;
-    }
 
   }
 
@@ -356,101 +161,4 @@ header{
   @media only screen and (max-width: 767px) {
     /* styles pour les téléphones vont ici */
 
-    .entreprise{
-      width: 100%;
-      font-size: 1.2em;
-    }
-
-    .nav{
-      display: none;
-    }
-
-    #banniere{
-      height: 100px;
-      font-size: 0.8em;
-    }
-
-    #presentation h3{
-      margin-top: -50px;
-      font-size: 1.8em;
-    }
-    
-    .encadrement p{
-      width: 80%;
-      font-size: medium;
-    }
-
-    #services h3{
-      font-weight: bold;
-      font-size: 1.7em;
-      background-color: #ffffff25;
-      padding: 20px 0px;
-      margin-bottom: 25px;
-    }
-
-    #services p{
-      font-size: 1em;
-    }
-
-    .ParcsJardins ul{
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: space-around;
-    }
-
-    .ParcsJardins li{
-      width: 90%;
-      margin-left: 5%;
-    }
-
-    .ParcsJardins{
-      margin-bottom: 20px;
-    }
-
-    .travauxBois{
-      margin-bottom: 75px;
-    }
-
-    #services img{
-      height: 200px;
-    }
-
-    .travauxBois ul{
-      flex-flow: column wrap;
-    }
-
-    .travauxBois li{
-      width: 90%;
-      margin-left: 5%;
-    }
-
-    .bois_div{
-      margin-bottom: -75px;
-    }
-
-    .bois_div p{
-      font-size: 1em;
-      margin-bottom: 20px;
-    }
-
-    .bois_div img{
-      height: 200px;
-    }
-
-    .bois_div ul{
-      flex-flow: column wrap;
-    }
-
-    .bois_div li{
-      width: 90%;
-      margin-left: 5%;
-    }
-
-    #boisChauffage h3{
-      font-weight: bold;
-      font-size: 1.7em;
-      background-color: #ffffff25;
-      padding: 20px 0px;
-      margin-bottom: 25px;
-    }
   }
