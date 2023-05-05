@@ -158,7 +158,7 @@ body {
 
 .encadrement:nth-child(2){
   display: flex;
-  text-align: right;
+  text-align: left;
   margin-bottom: 50px;
 }
 
@@ -238,7 +238,32 @@ body {
 
 /*---Contact---*/
 
+.contact{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
 
+.contact_ul{
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.contact_li{
+  width: 100%;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.contact_li p{
+  margin-left: 15px;
+}
 
 /* Styles pour les écrans de taille moyenne */
 @media screen and (min-width: 576px) {
