@@ -267,14 +267,105 @@ body {
   margin-left: 15px;
 }
 
-/* Styles pour les écrans de taille moyenne */
-@media screen and (min-width: 576px) {
-
-}
-
 /* Styles pour les grands écrans */
 @media screen and (min-width: 992px) {
 
+    #banniere p{
+      font-size :2.2em;
+      font-weight: 700;
+    }
+
+    #presentation{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+        
+    .encadrement{
+      font-size: 1.3em;
+    }
+
+    .encadrement:nth-child(1){
+      text-align: center;
+      justify-content: center;
+      width: 90%;
+    }
+
+    .encadrement:nth-child(2){
+      text-align: center;
+      width: 60%;
+    }
+
+    .besoin{
+      font-size: 2.3em;
+    }
+
+    .titre_services{
+      font-size: 2.3em;
+    }
+
+    .parcsJardins img{
+      height: 520px;
+      border-radius: 20px 20px 0 0;
+      border-bottom: 1px solid white;
+    }
+
+    .parcsJardins ul{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    .parcsJardins li{
+      width: 45%;
+      margin: 20px 0;
+    }
+
+    .parcsJardins p{
+      border-radius: 0 0 20px 20px;
+    }
+
+    .travauxBois ul{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    .travauxBois li{
+      width: 45%;
+      margin: 20px 0;
+    }
+
+    .travauxBois img{
+      height: 520px;
+      border-radius: 20px 20px 0 0;
+      border-bottom: 1px solid white;
+    }
+
+    .travauxBois p{
+      border-radius: 0 0 20px 20px;
+    }
+
+    #bois_Chauffage ul{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    #bois_Chauffage li{
+      width: 45%;
+      margin: 20px 0;
+    }
+
+    #bois_Chauffage img{
+      height: 520px;
+      border-radius: 20px 20px 0 0;
+      border-bottom: 1px solid white;
+    }
+
+    #bois_Chauffage p{
+      border-radius: 0 0 20px 20px;
+    }
 }
 
 
